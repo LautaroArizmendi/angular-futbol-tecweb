@@ -14,7 +14,7 @@ import { TeamsComponent } from './teams/teams.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
