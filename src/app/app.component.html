@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-light">
+<nav class="navbar navbar-expand-lg" style="background-color: rgb(58, 173, 58)">
     <div class="container-fluid">
         <img src="/assets/futbol-logo.png" alt="Logo de futbol">
       <a class="navbar-brand" href="#">Información real de fútbol</a>
@@ -7,11 +7,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" [routerLink]="['/teams']">Teams</a>
-          <a class="nav-link active" [routerLink]="['/players']">Players</a>
+          <a class="nav-link" [routerLink]="['/teams']">Equipos</a>
+          <a class="nav-link" [routerLink]="['/players']">Jugadores</a>
         </div>
       </div>
     </div>
   </nav>
-
+  
 <router-outlet></router-outlet>
