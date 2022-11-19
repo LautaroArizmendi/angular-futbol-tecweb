@@ -1,1 +1,43 @@
-<router-outlet></router-outlet>
+<div class="album py-3 bg-light">
+  <div class="container d-flex justify-content-between bd-highlight mb-2">
+    <div class="p-4"><h3>Lista de Jugadores de Fútbol Argentino</h3></div>
+    <div class="p-1"><img src="/assets/afa.png" alt="Asociación de Futbol Argentino"/></div>  
+  </div>
+    <div class="container responsive-table">
+      <div id="yw1" class="grid-view">
+        <div class="summary"></div>
+        <table class="table table-bordered">
+          <thead>
+            <tr class="table-secondary">
+              <th>Jugador</th>
+              <th>Edad</th>
+              <th>Nacionalidad</th>
+              <th>Club</th>
+              <th>Goles</th>
+              <th>Posicion</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="odd" *ngFor="let player of players">
+              <td>{{ player.name }}</td>
+              <td>{{ player.age }}</td>
+              <td>{{ player.nationality }}</td>
+              <td>{{ player.team?.name  }}</td>
+              <td>{{ player.goals }}</td>
+              <td>{{ player.position }}</td>
+              <td>
+                <div class="container d-flex justify-content-between bd-highlight mb-2">
+                  <button type="button" class="btn btn-success btn-sm" (click)="put(player.id)">Actualizar</button>
+                  <button type="button" class="btn btn-danger btn-sm" (click)="delete(player.id)">Borrar</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+</div>
+<div class="d-grid gap-2 col-6 mx-auto">
+  <button class="btn btn-primary" type="button" (click)="new()">Agregar jugador</button>  
+</div>
