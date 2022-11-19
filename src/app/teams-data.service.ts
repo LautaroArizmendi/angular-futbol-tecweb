@@ -13,6 +13,6 @@ export class TeamsDataService {
 
 
   getAll(): Observable<Team[]> {
-    return this.http.get<Team[]>(URL)
+    return this.http.get<Team[]>(URL);
   }
   }

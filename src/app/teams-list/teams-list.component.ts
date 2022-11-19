@@ -14,7 +14,6 @@ export class TeamsComponent implements OnInit {
   constructor(private teamsDataService: TeamsDataService) { }
 
   ngOnInit(): void {
-    this.teamsDataService.getAll().subscribe( (teams: Team[]) => this.teams = teams)
+    this.teamsDataService.getAll().subscribe( teams => this.teams = teams);
   }
-
 }

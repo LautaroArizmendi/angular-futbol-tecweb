@@ -1,1 +1,22 @@
-<router-outlet></router-outlet>
+<div class="album py-3 bg-light">
+  <div class="container d-flex justify-content-between bd-highlight mb-2">
+    <div class="p-4"><h3>Lista de Equipos de Fútbol Argentino</h3></div>
+    <div class="p-1"><img src="/assets/afa.png" alt="Asociación de Futbol Argentino"/></div>  
+  </div>
+    <div class="container">
+      <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2 g-2">
+        <div *ngFor="let team of teams" class="card shadow-lg bg-body rounded">
+          <img src="/assets/{{ team.stadium }}.png" alt="{{ team.stadium }}" />
+          <div class="text-center">
+            <div class="card-body">
+              <img src="/assets/{{ team.badges }}.png" alt="Escudo de {{ team.name }}"/>
+            </div>
+            <div class="text-center album py-2">
+              <h3>{{ team.name }}</h3>
+              <p class="card-text">Año de fundación: {{ team.year_fundation }}.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
