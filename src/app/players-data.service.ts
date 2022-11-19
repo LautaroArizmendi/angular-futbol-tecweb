@@ -2,9 +2,9 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Player } from './player';
+import { environment } from 'src/environments/environment';
 
-
-const URL = "http://localhost:3000/players";
+const URL = environment.api_url + '/players'
 @Injectable({
   providedIn: 'root'
 })

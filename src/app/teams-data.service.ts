@@ -2,8 +2,9 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Team } from './team';
+import { environment } from 'src/environments/environment';
 
-const URL = "http://localhost:3000/teams";
+const URL = environment.api_url + '/teams'
 @Injectable({
   providedIn: 'root'
 })
