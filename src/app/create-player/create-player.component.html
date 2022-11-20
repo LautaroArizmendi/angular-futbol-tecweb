@@ -42,8 +42,11 @@
         </div>
       </div>
 
-      <button type="submit" class="btn btn-primary" (click)="createPlayer()">
+      <button *ngIf="!this.player.id" type="submit" class="btn btn-primary" (click)="createPlayer()">
         Agregar
+      </button>
+      <button *ngIf="this.player.id" type="submit" class="btn btn-primary" (click)="createPlayer()">
+        Actualizar
       </button>
     </div>
   </form>
