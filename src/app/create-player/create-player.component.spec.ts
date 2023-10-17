@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { CreatePlayerComponent } from './create-player.component';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('CreatePlayerComponent', () => {
   let component: CreatePlayerComponent;
@@ -8,6 +8,7 @@ describe('CreatePlayerComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [HttpClientModule],
       declarations: [ CreatePlayerComponent ]
     })
     .compileComponents();
