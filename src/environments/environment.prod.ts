@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  api_url: 'https://futbol-nest.onrender.com'
+  api_url: 'http://localhost:3000'
 };
