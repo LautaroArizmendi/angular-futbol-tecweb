@@ -26,6 +26,6 @@ describe('PlayersComponent', () => {
     const fixture = TestBed.createComponent(PlayersComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h2')?.textContent).toContain('Lista de Jugadores de Fútbol Argentino');
+    expect(compiled.querySelector('h3')?.textContent).toContain('Lista de Jugadores de Fútbol Argentino');
   });
 });
