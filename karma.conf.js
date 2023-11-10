@@ -27,10 +27,8 @@ module.exports = function (config) {
     coverageReporter: {
       dir: require('path').join(__dirname, './coverage/futbol'),
       subdir: '.',
-      reporters: [
-        { type: 'html' },
-        { type: 'text-summary' }
-      ]
+      reporters: [{ type: "cobertura" }],
+
     },
     reporters: ['progress', 'kjhtml'],
     port: 9876,
