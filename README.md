@@ -1,6 +1,7 @@
 # Futbol
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
+[![codecov](https://codecov.io/gh/LautaroArizmendi/angular-futbol-tecweb/graph/badge.svg?token=45HQF37FQO)](https://codecov.io/gh/LautaroArizmendi/angular-futbol-tecweb)
 
 ## Development server
 
